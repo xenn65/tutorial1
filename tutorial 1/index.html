@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+            .profile-photo{
+                max-height: 200px;
+                max-width: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+                align-self: center;
+            }
+            h1{
+                color:white;
+                text-align: center;
+                margin-top: 10px !important; /* kasi na ooveride sa css */
+                font-weight: bold !important;
+                font-size: 24px !important;
+            }
+            p{
+                color:white;
+                text-align: center;
+                font-size: 16px !important;
+            }
+            .overlay{
+                background-color: black;
+                opacity:0.4;
+                position: fixed;
+                height: 100vh;
+                width: 100vw;
+            }
+            .alert{
+                background: white;
+                color: green;
+                font-size: 30px;
+                font-weight: bold;
+            }
+    </style>
+</head>
+<body style="background: url('images.jpg')">
+    <div class="overlay"></div> 
+    <div class="alert" style="position: fixed; top: 0px; width: 100%; height: 50px;"></div> 
+    <div>
+        <marquee behavior="scroll" direction="left">
+            Attention: I am looking for a Job
+        </marquee>
+    </div> 
+    <div class ="h-screen w-screen flex items-center justify-center">
+         <div>
+            <center>
+                <img class ="profile-photo" src="simsons.jpg" alt="">
+            </center>
+            <h1>Azurin John Paul </h1>
+            <p> Im a Junior Developer</p>
+         </div>
+    </div>
+</body>
+</html>
